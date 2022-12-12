@@ -78,7 +78,7 @@ const sendMailToUser = async ({ toUser, title, description, priority, date, time
         secure: false,
         auth: {
             user: 'charchilk4@gmail.com',
-            pass: 'bryzrahrkqmokvdj'
+            pass: 'db_password'
         }
     })
 
