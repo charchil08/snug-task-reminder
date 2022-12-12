@@ -1,0 +1,68 @@
+.edit_task {
+  width: 90vw;
+  /* height: 50vh; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: rgb(157 157 157 / 20%) 0px 4px 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.edit_task h2 {
+  color: #6674cc;
+}
+
+.edit_task .portion {
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.826);
+}
+
+.edit_task .portion label {
+  padding: 0.675rem 0;
+}
+
+.edit_task .task_input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.edit_task .task_input .portion input,
+.edit_task .task_input .portion textarea,
+.edit_task .task_input .portion select,
+.edit_task .task_input .submit {
+  width: 22rem;
+  height: 2.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  box-shadow: rgba(157, 157, 157, 0.788) 0px 4px 10px;
+}
+
+.edit_task .task_input textarea.description {
+  height: 5rem;
+}
+
+.edit_task .task_input .portion-4 option:hover,
+.edit_task .task_input .portion-4 option:focus,
+.edit_task .task_input .portion-4 option:active {
+  background-color: #6674cc;
+}
+
+.edit_task .task_input .submit {
+  background-color: #6674cc;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}

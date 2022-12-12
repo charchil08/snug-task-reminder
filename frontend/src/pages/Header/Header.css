@@ -1,0 +1,47 @@
+.header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+
+  font-size: 1.5rem;
+  background-image: linear-gradient(to bottom, #6674cc, #b578ff);
+  color: #ffffff;
+  box-shadow: rgb(0 0 0 / 49%) 2px -26px 49px -21px;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.header .header_icon {
+  width: 2.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header .nav {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  font-size: 1.25rem;
+  /* padding-right: 2rem; */
+}
+
+.header .nav .nav_item:focus,
+.header .nav .nav_item:hover,
+.header .nav .nav_item:active {
+  cursor: pointer;
+  scale: 1.04;
+  transition: all 0.2s;
+}
+
+.header .nav .nav_item .nav_item_link {
+  text-decoration: none;
+  color: white;
+}
+
+.header .is_active {
+  border-bottom: 3px solid white !important;
+}

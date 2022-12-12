@@ -1,0 +1,134 @@
+.pending .pending_tasks {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.pending .pending_tasks .filters {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  place-items: center;
+  box-shadow: rgba(157, 157, 157, 0.788) 0px 4px 10px;
+  padding: 2rem 0;
+  width: 80%;
+}
+
+.pending .pending_tasks .filters .search_filter {
+  padding: 0 10%;
+}
+
+.pending .pending_tasks .filters .search_filter .filter_search_input {
+  width: 22rem;
+  height: 2.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  box-shadow: rgba(157, 157, 157, 0.788) 0px 4px 10px;
+}
+
+.pending .pending_tasks .filters .search_filter__2 {
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.pending .pending_tasks .filters .search_filter__3 {
+  display: flex;
+  gap: 3rem;
+}
+
+.pending .pending_tasks .filters .search_filter__3 > * {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pending .pending_tasks .filters .search_filter__3 > * > .due_date__from,
+.pending .pending_tasks .filters .search_filter__3 > * > .due_date__to {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 0.25rem 0.4rem;
+  box-shadow: rgba(157, 157, 157, 0.788) 0px 4px 10px;
+}
+
+.pending .pending_tasks .pending_title {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.pending .pending_tasks h2 {
+  color: hsl(232, 50%, 60%);
+}
+
+.pending .pending_tasks p {
+  color: hsla(232, 50%, 40%, 0.653);
+}
+
+.pending .pagination {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.pending .pagination .page_number,
+.pending .pagination .btn {
+  padding: 5px 1%;
+  border: 1px solid hsla(232, 50%, 60%);
+  cursor: pointer;
+}
+
+.pending .pagination .active_page,
+.pending .pagination .btn:hover {
+  color: #fff;
+  background-color: hsla(232, 50%, 60%);
+}
+
+.pending .pagination .btn:hover,
+.pending .pagination .btn:focus {
+  color: #fff;
+  background-color: hsla(232, 50%, 50%, 0.5);
+}
+
+.pending .pagination .prev_page {
+  border-top-left-radius: 0.5rem;
+  border-end-start-radius: 0.5rem;
+}
+
+.pending .pagination .next_page {
+  border-top-right-radius: 0.5rem;
+  border-end-end-radius: 0.5rem;
+}
+
+@media screen and (max-width: 560px) {
+  .pending .pending_tasks .filters {
+    gap: 1.5rem;
+    width: 90vw;
+  }
+
+  .pending .pending_tasks .filters .search_filter {
+    padding: 0 2rem;
+  }
+
+  .pending .pending_tasks .filters .search_filter__3 {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 456px) {
+  .pending .pending_tasks .filters .search_filter .filter_search_input {
+    width: 100%;
+    margin: auto;
+  }
+}
