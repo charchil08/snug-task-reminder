@@ -4,7 +4,7 @@ const pool = new Pool({
     user: 'postgres',
     host: 'localhost',
     database: 'taskStoreDB',
-    password: 'postgres',
+    password: 'db_password',
     port: 5432,
 })
 
